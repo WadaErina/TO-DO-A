@@ -1,10 +1,5 @@
-const button = document.getElementById('btn-add-task')
-// bun-add-taskというidを持つ要素を取得する。よって①の要素を取得
-const input = document.getElementById('new-task')
-// new-taskというidを持つ要素をinputに取得する
-const todos = document.getElementById('todos')
-// todosというdivの要素をtodosに取得する。
 
+console.log("++++++")
 // ボタンがクリックされたという情報をevに入れる
 function createTodoItem(title) {
   const todoItem = document.createElement('div')
