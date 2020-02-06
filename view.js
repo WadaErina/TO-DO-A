@@ -1,5 +1,5 @@
 document.getElementById('btn-add-task').addEventListener('click', ev => {
-  debugger;
+  // debugger;
   // 新しいタスクを作成
   createTodoItem(document.getElementById('new-task').value)
   // // todosというdivの要素をtodosに取得する。
@@ -14,7 +14,7 @@ document.getElementById('uncompleted-tasks').addEventListener('click', ev => {
   // window.tasks から チェックが外れているデータだけを抽出
   // して、それをshowTasksすればおｋ
   // ※ showTasks は少し修正しないと↑ができないかも
-  
+
   return
   // todosというdivの要素をtodosに取得
   const todos = document.getElementById('todos')
@@ -42,6 +42,10 @@ const showTasks = () => {
     // // new-taskというidを持つ要素をinputに取得する
 
     const todoItem = document.createElement('div')
+
+    // for(var i = 0;i<5;i++){
+    //   const index = i;
+    // }
 
     // 新しくdivという要素を作成する。それをtodoItemとする。
     todoItem.className = 'todo-item'

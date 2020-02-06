@@ -19,8 +19,12 @@ let registerTasks = (tasks) => localStorage.setItem('tasks', JSON.stringify(task
 // localStorage からデータを取り出す関数
 let takeTasks = () => JSON.parse(localStorage.getItem('tasks'))
 
+// let updateTask = (tasks) => upDateLocalStorage("completed", "true");
+
 const checked = (ev) => {
+  // debugger;
   console.log('タスクのチェックボックスが操作されたときの関数', ev.target.checked)
   // tasks の該当するタスクのチェック状態を変更する
   // 変更された状態を localStorage に登録する処理を呼び出す
+  // updateTask(tasks)
 }
